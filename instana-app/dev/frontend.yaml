@@ -50,7 +50,7 @@ alb:
   scheme: "internet-facing"
   certificateArn: "arn:aws:acm:ap-south-1:522814728660:certificate/fe6839d9-7428-40c7-9128-c2116c8f257b
 dns:
-  hostname: "dev-instana.konkas.tech
+  hostname: "dev-instana.konkas.tech"
 
 service:
   port: 80
