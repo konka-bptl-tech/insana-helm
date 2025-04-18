@@ -1,7 +1,5 @@
 #!/bin/bash
 
-kubectl create ns instana
-kubectl apply -f ~/kubernetes/k8s-volumes/dynamic-volume/instana.yaml
 install_or_upgrade() {
     RELEASE_NAME=$1
     CHART_PATH=$2
@@ -20,11 +18,11 @@ install_or_upgrade() {
 NAMESPACE="instana"
 
 install_or_upgrade "mongo" "." "dev/mongo.yaml" "$NAMESPACE"
-sleep 30
+sleep 10
 install_or_upgrade "mysql" "." "dev/mysql.yaml" "$NAMESPACE"
 sleep 10
 install_or_upgrade "rabbitmq" "." "dev/rabbitmq.yaml" "$NAMESPACE"
-sleep 5
+sleep 10
 install_or_upgrade "redis" "." "dev/redis.yaml" "$NAMESPACE"
 
     
