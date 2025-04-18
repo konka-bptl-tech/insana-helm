@@ -1,4 +1,5 @@
 #!/bin/bash
+NAMESPACE="instana"
 install_or_upgrade() {
     RELEASE_NAME=$1
     CHART_PATH=$2
@@ -16,14 +17,14 @@ install_or_upgrade() {
 
 NAMESPACE="instana"
 
-install_or_upgrade "catalogue" "." "dev/catalogue.yaml" "$NAMESPACE"
-install_or_upgrade "shipping" "." "dev/shipping.yaml" "$NAMESPACE"
+install_or_upgrade "catalogue" "." "dev/catalogue.yaml"
+install_or_upgrade "shipping" "." "dev/shipping.yaml"
 sleep 30
-install_or_upgrade "user" "." "dev/user.yaml" "$NAMESPACE"
-install_or_upgrade "cart" "." "dev/cart.yaml" "$NAMESPACE"
-install_or_upgrade "payment" "." "dev/payment.yaml" "$NAMESPACE"
+install_or_upgrade "user" "." "dev/user.yaml"
+install_or_upgrade "cart" "." "dev/cart.yaml"
+install_or_upgrade "payment" "." "dev/payment.yaml"
 sleep 20
-install_or_upgrade "frontend" "." "dev/frontend.yaml" "$NAMESPACE"
+install_or_upgrade "frontend" "." "dev/frontend.yaml"
 
 
 

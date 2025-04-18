@@ -49,5 +49,7 @@ service:
   port: 8080
 secrets:
   enabled: false
+ingress:
+  enabled: false
 
 

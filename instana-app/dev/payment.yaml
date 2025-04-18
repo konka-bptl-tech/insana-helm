@@ -59,5 +59,9 @@ secrets:
         DB_PASSWD: "roboshop123"
 
 
+ingress:
+  enabled: false
+
+
 
 

@@ -55,3 +55,6 @@ secrets:
     - data:
         DB_USER:  "shipping"
         DB_PASSWD: "RoboShop@1"
+
+ingress:
+  enabled: false

@@ -52,4 +52,7 @@ service:
 secrets:
   enabled: false
 
+ingress:
+  enabled: false
+
 
